@@ -1,6 +1,7 @@
 # Movies API
 
-A *Laravel Breeze* API to access my favorite movies, with my own comments about them.
+A *Laravel Breeze* API to access my favorite movies, with my own comments about them. In 
+addition, I'm using **Blade** as the template engine. In the next project I'll use Breeze with **Inertia** instead.
 
 ## Registering a User
 
