@@ -19,6 +19,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('movies', MovieController::class)->only([
-    'index', 'show'
-]);
+Route::middleware('auth:sanctum')->group(function () {
+    Route::resource('movies', MovieController::class)->only([
+        'index', 'show', 'store', 'update', 'destroy'
+    ]); 
+});
